@@ -170,7 +170,7 @@
 
 # Log file and secure password file
 LOG_FILE="/var/log/user_management.log"
-PASSWORD_FILE="/var/secure/user_passwords.csv"
+PASSWORD_FILE="/var/secure/user_passwords.txt"
 
 # Ensure the secure directory exists and set appropriate permissions
 mkdir -p /var/secure
