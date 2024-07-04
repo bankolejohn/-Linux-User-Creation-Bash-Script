@@ -85,11 +85,13 @@ fi
 Adding users to multiple groups allows for flexible permission management, enabling users to have access to different resources as needed. Creating missing groups on the fly ensures smooth execution without manual intervention.
 
 #### Set Home Directory Permissions:
+
 Setting strict permissions ensures that only the user can access their home directory, enhancing security and privacy. Changing ownership ensures that the user has full control over their own files.
 
 ```chmod 700 "/home/$username"
 chown "$username:$username" "/home/$username"
 ```
+
 
 #### Generate and Set Password:
 
