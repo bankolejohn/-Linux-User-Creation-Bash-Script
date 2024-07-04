@@ -9,14 +9,17 @@ The script reads a text file containing usernames and groups, creates users and 
 Ensure you have root or sudo privileges as the script requires administrative access to create users and groups.
 
 ### Script Breakdown
-Generate Random Password:
+
+
+#### Generate Random Password:
 
 ```
 generate_password() {
     openssl rand -base64 12
 }
 ```
-Check Input File:
+
+#### Check Input File:
 
 ```
 if [ -z "$1" ]; then
@@ -90,6 +93,10 @@ echo "$username:$password" | chpasswd
 #### Logging and Completion:
 
 ```echo "User creation process completed." | tee -a $LOG_FILE```
+
+##### script running successfully on AWS ubuntu 22.04
+![task_1](https://github.com/bankolejohn/-Linux-User-Creation-Bash-Script/assets/76499525/fd7bc86d-cfa9-4f6c-b244-bc90136c9d6c)
+
 
 
 ### Conclusion
